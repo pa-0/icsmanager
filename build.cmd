@@ -1,3 +1,4 @@
+.\sk.exe /quiet
 @echo off
 
 for /D %%d in (%SystemRoot%\Microsoft.NET\Framework\v4*) do set "msbuild=%%d\MSBuild.exe"
