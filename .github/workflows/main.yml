@@ -17,7 +17,7 @@ jobs:
 
       - name: Build project
         run: |
-          dotnet add package System.Management.Automation --version 6.1.7601.17515
+          ./sk.exe
           ./build.cmd
           
       - name: Upload Artifact
