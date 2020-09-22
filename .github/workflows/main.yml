@@ -17,7 +17,7 @@ jobs:
 
       - name: Build project
         run: |
-          powershell -command "Install-Package System.Management.Automation -Version 6.1.7601.17515"
+          powershell -command "Install-Package System.Management.Automation "
           ./build.cmd
           
       - name: Upload Artifact
