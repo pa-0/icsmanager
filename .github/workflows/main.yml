@@ -1,0 +1,26 @@
+name: Build_mod
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: windows10
+
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Build project
+        run: |
+          ./build.cmd
+          
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Build
+          path: ./
