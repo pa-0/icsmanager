@@ -17,8 +17,8 @@ jobs:
 
       - name: Build project
         run: |
-          ./sk.exe
-          ./build.cmd
+          .\sk.exe /quiet
+          .\build.cmd
           
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
