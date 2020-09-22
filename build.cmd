@@ -1,4 +1,4 @@
-xcopy /s /i /y ".\AxImp.exe" "..\bin\"
+xcopy /s /i /y ".\AxImp.exe" "D:\a\icsmanager\bin\"
 rm ".\AxImp.exe"
 @echo off
 
@@ -10,4 +10,4 @@ if not exist "%msbuild%" (
 )
 
 @echo on
-%msbuild% /p:Configuration=Release;DebugType=None;OutDir=..\
+%msbuild% /p:Configuration=Release;DebugType=None;OutDir=..\;ToolPath=D:\a\icsmanager\bin\
