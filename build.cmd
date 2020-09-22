@@ -1,4 +1,4 @@
-xcopy /s /i /y ".\AxImp.exe" "C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86\bin\"
+xcopy /s /i /y ".\AxImp.exe" "..\bin\"
 rm ".\AxImp.exe"
 @echo off
 
