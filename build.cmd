@@ -8,4 +8,4 @@ if not exist "%msbuild%" (
 )
 
 @echo on
-%msbuild% /p:Configuration=Release;DebugType=None;OutDir=..\;
+%msbuild% /p:Configuration=Release;DebugType=None;OutDir=..\
